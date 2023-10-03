@@ -24,9 +24,9 @@
 
 
 formInputs.forEach(input => {
- 
-  const inputValue = input.value;
-
-  console.log(input.id + ':', inputValue);
-});
+   if (input.getAttribute('type') === 'text') {
+     const inputValue = input.value;
+     console.log(input.id + ':', inputValue);
+   }
+ });
 </script>
